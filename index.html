@@ -682,7 +682,7 @@
             energy: 50,
             maxEnergy: 50,
             baseHp: 1000,
-            baseMaxHp: 1000,
+            baseMaxHp: 10000,
             currentWave: 0,
             buildings: [],
             units: [],
@@ -699,7 +699,7 @@
         const buildingTypes = {
             turret: { name: 'Турель', icon: '🗼', cost: 100, damage: 15, range: 180, fireRate: 800, hp: 150, energy: 1, color: '#5588cc' },
             cannon: { name: 'Пушка', icon: '💣', cost: 200, damage: 40, range: 220, fireRate: 1500, hp: 200, energy: 2, color: '#885533', splash: true },
-            laser: { name: 'Лазер', icon: '⚡', cost: 350, damage: 8, range: 250, fireRate: 100, hp: 120, energy: 3, color: '#cc55cc' },
+            laser: { name: 'Лазер', icon: '⚡', cost: 500, damage: 50, range: 500, fireRate: 800, hp: 200, energy: 3, color: '#cc55cc' },
             wall: { name: 'Стена', icon: '🧱', cost: 50, damage: 0, range: 0, fireRate: 0, hp: 500, energy: 0, color: '#888888' },
             generator: { name: 'Генератор', icon: '🔋', cost: 300, damage: 0, range: 0, fireRate: 0, hp: 200, energy: -5, color: '#44aa44' }
         };
@@ -715,7 +715,7 @@
             { name: 'Орк', icon: '👹', hp: 120, damage: 20, speed: 1.5, reward: 25, color: '#448844' },
             { name: 'Тролль', icon: '🧌', hp: 300, damage: 35, speed: 1, reward: 50, color: '#666644' },
             { name: 'Демон', icon: '😈', hp: 200, damage: 50, speed: 2.5, reward: 75, color: '#aa4444' },
-            { name: 'Дракон', icon: '🐉', hp: 800, damage: 80, speed: 0.8, reward: 200, color: '#cc6644' }
+            { name: 'Дракон', icon: '🐉', hp: 800, damage: 80, speed: 0.8, reward: 200, color: '#cc6644' },{ name: 'Томас', icon: '📛', hp: 2000, damage: 200, speed: 0.3, reward: 2000, color: '#cc6644' }
         ];
         
         const gameWorld = document.getElementById('gameWorld');
